@@ -27,7 +27,7 @@ export default defineConfig({
   use: {
   baseURL: 'https://react-shopping-cart-67954.firebaseapp.com/',
   trace: 'on-first-retry',
-  headless: false,
+  headless: true,
 },
 
 
