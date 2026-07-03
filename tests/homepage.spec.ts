@@ -19,7 +19,7 @@ test('Go to shopping cart', async ({ page }) => {
     await expect(page.getByLabel('XXL', {exact:true})).toBeVisible();
   });
   
-  test('Star link', async ({page})=>{
+test('Star link', async ({page})=>{
     await page.goto('/');
     await page.getByRole('link', ({name: 'Star'})).click();
     await expect(page).toHaveURL('https://github.com/jeffersonRibeiro/react-shopping-cart');
